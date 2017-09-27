@@ -34,6 +34,19 @@ setup.py
          zip_safe=False
    )
 
+Cargo.toml
+
+   name = "hello-world"
+   version = "0.1.0"
+   authors = ["Nikolay Kim <fafhrd91@gmail.com>"]
+
+   [dependencies.pyo3]
+   version = "0.2.0"
+   default-features = false
+
+   [lib]
+   crate-type = ["cdylib"]
+   name = "helloworld"
 
 You can use same commands as for c-extensions. For example::
 
